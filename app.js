@@ -1,7 +1,8 @@
 document.querySelector("#todo-button").onclick = () => {
     const list = document.querySelector("#todo-ul");
-    const works = document.querySelector("#todo-input");
-
+    let works = document.querySelector("#todo-input");
+    let total = document.querySelector("#toplam");
+    total++
     list.innerHTML += `
         <li class="todo-li">
             <span>
@@ -12,6 +13,7 @@ document.querySelector("#todo-button").onclick = () => {
             <i class="fa-solid fa-trash-can"></i>
         </li>
     `
+
 
     works.value = "";
 
